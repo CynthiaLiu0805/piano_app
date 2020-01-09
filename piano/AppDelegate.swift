@@ -7,7 +7,17 @@
 //
 
 import UIKit
+//
+var blockRotation = Bool()
 
+func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        if blockRotation {
+            return .landscapeLeft
+        }
+        return .portrait
+        
+}
+//
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
